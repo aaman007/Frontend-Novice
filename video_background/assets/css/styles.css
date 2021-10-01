@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+:root {
+    --overlay-primary: #14968b;
+    --overlay-secondary: #46e0d4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.showcase {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    color: white;
+    z-index: 2;
+}
+
+.showcase header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    z-index: 100;
+}
+
+.showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--overlay-secondary);
+    mix-blend-mode: overlay;
+}
+
+.logo {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.toggle {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    background-image: url("https://i.ibb.co/HrfVRcx/menu.png");
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-position: center;
+    cursor: pointer;
+    z-index: 999;
+    transition: 0.3s;
+}
+
+.toggle.active {
+    background-image: url("https://i.ibb.co/rt3HybH/close.png");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    margin-right: 300px;
+}
+
+.text {
+    position: relative;
+    z-index: 10;
+}
+
+.text h2 {
+    font-size: 5em;
+    font-weight: 700;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.text h3 {
+    font-size: 4em;
+    font-weight: 500;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.text p {
+    font-size: 1.1em;
+    font-weight: 500;
+    margin: 20px 0;
+    max-width: 750px;
+}
+
+.text a {
+    display: inline-block;
+    font-size: 1em;
+    background: var(--overlay-primary);
+    padding: 13px 30px;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 30px;
+    color: #fff;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.text a:hover {
+    letter-spacing: 6px;
+}
+
+.social {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.social li {
+    list-style: none;
+}
+
+.social li a {
+    display: inline-block;
+    filter: invert(1);
+    margin-right: 20px;
+    transform: scale(0.5);
+    transition: 0.5s transform;
+}
+
+.social li:nth-child(1) {
+    filter: invert(1);
+}
+
+.social li a:hover {
+    transform: scale(0.5) translateY(-15px);
+}
+
+.social img {
+    width: 40px;
+    height: 40px;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+
+.menu.active {
+    z-index: 990;
+}
+
+.menu ul {
+    position: relative;
+    list-style: none;
+}
+
+.menu ul li {
+    margin: 10px 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #111;
+}
+
+.menu ul li a:hover,
+.menu ul li a.active {
+    color: var(--overlay-primary);
+}
+
+@media (max-width: 790px) {
+    .showcase,
+    .showcase header {
+        padding: 40px;
+    }
+
+    .text h2 {
+        font-size: 3em;
+    }
+
+    .text h3 {
+        font-size: 2.7em;
+    }
+
+    .text a {
+        padding: 10px 25px;
+    }
+}
+
+@media (max-width: 435px) {
+    .showcase,
+    .showcase header {
+        padding: 20px;
+    }
+
+    .text h2 {
+        font-size: 2em;
+    }
+
+    .text h3 {
+        font-size: 2em;
+    }
+
+    .text p {
+        font-size: 1em;
+    }
+
+    .text a {
+        padding: 8px 20px;
+        font-size: 0.8em;
+    }
+}
