@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>ColorMaker</title>
+</head>
+<body>
+    <h1 class="appname"> Color Maker </h1>
+
+    <div class="color-canvas">
+        <div class="color-board">
+            <div class="color-text">
+                <div class="rgb-color"> rgba(0, 0, 0) </div>
+                <div class="hex-color"> #000000 </div>
+            </div>
+        </div>
+        <div class="color-control">
+            <div class="range-control">
+                <strong>Red</strong> <input id="red-value" type="range" min="0" max="255" value="0">
+            </div>
+            <div class="range-control">
+                <strong>Green</strong> <input id="green-value" type="range" min="0" max="255" value="0">
+            </div>
+            <div class="range-control">
+                <strong>Blue</strong> <input id="blue-value" type="range" min="0" max="255" value="0">
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
