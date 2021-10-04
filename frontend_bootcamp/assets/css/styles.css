@@ -1,0 +1,21 @@
+body::before {
+  display: block;
+  content: "";
+  height: 60px;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.bg-primary {
+  background-color: red;
+}
+
+@media (min-width: 768px) {
+  .newsletter-input {
+    width: 50%;
+  }
+}
