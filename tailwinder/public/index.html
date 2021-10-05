@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Local Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <title>Tailwinder</title>
+</head>
+<body class="font-Poppins">
+    <!-- Navbar -->
+    <header>
+        <nav class="container flex items-center py-4 mt-4 sm:mt-12">
+            <!-- Brand -->
+            <div class="py-1">
+                <img src="assets/images/logo-bookmark.svg" alt="Bookmark Logo">
+            </div>
+            
+            <!-- Navigations -->
+            <ul class="hidden sm:flex flex-1 justify-end items-center gap-12 text-bookmark-blue uppercase text-xs">
+                <li class="cursor-pointer"> Features </li> 
+                <li class="cursor-pointer"> Pricing </li> 
+                <li class="cursor-pointer"> Contact </li>
+                <button type="button" class="bg-bookmark-red text-white rounded-md px-7 py-3 uppercase">Login</button>
+            </ul>
+            <div class="flex flex-1 sm:hidden justify-end items-center">
+                <i class="fas fa-bars text-2xl"></i>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Hero -->
+    <section class="relative overflow-hidden">
+        <div class="container flex flex-col-reverse lg:flex-row justify-center mt-12 lg:mt-28 gap-12">
+            <!-- Content -->
+            <div class="flex flex-1 flex-col items-center lg:items-start">
+                <h2 class="text-bookmark-blue text-center lg:text-left text-3xl md:text-4 lg:text-5xl mb-6">
+                    A Simple Bookmark Manager
+                </h2>
+                <p class="text-bookmark-grey text-lg text-center lg:text-left mb-6">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, iure? Architecto, nesciunt. Repellat est quidem voluptates, pariatur velit laboriosam quis?
+                </p>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <button type="button" class="shadow-md py-3 px-6 rounded-md transition duration-300 bg-bookmark-purple text-white hover:bg-bookmark-white hover:text-black"> 
+                        Get it on Chrome 
+                    </button>
+                    <button type="button" class="shadow-md py-3 px-6 rounded-md transition duration-300 bg-bookmark-white hover:bg-bookmark-purple hover:text-white">
+                         Get it on Firefox
+                    </button>
+                </div>
+            </div>
+
+            <!-- Image -->
+            <div class="flex flex-1 justify-center mb-10 md:mb-16 lg:mb-0 z-10">
+                <img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 lg:w-full lg:h-full" src="assets/images/hero-bg.png" alt="Hero">
+            </div>
+        </div>
+
+        <!-- Rounded Rectangle -->
+        <div class="hidden lg:block bg-bookmark-purple rounded-l-full absolute h-80 w-2/4 right-0 top-32 lg:-bottom-28 lg:-right-36">
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="bg-bookmark-white py-20 mt-20 lg:mt-60 overflow-hidden">
+        <!-- Heading -->
+        <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+            <h1 class="text-3xl text-center text-bookmark-blue">Features</h1>
+            <p class="text-center text-bookmark-grey mt-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nemo facere id rerum iure perferendis maxime soluta sint quo distinctio!
+            </p>
+        </div>
+
+        <!-- Feature #1 -->
+        <div class="relative mt-20 lg:mt-24">
+            <div class="container flex flex-col lg:flex-row justify-center items-center gap-x-24">
+                <!-- Image -->
+                <div class="flex flex-1 justify-center z-10 mb-16 lg:mb-0">
+                    <img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="assets/images/illustration-features-tab-1.png" alt="Feature 1">
+                </div>
+
+                <!-- Content -->
+                <div class="flex flex-1 flex-col items-center lg:items-start">
+                    <h1 class="text-bookmark-blue text-3xl">
+                        Bookmark in one click
+                    </h1>
+                    <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, iure? Architecto, nesciunt. Repellat est quidem voluptates, pariatur velit laboriosam quis?
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-6">
+                        <button type="button" class="shadow-md py-3 px-6 rounded-md transition duration-300 bg-bookmark-purple text-white hover:bg-bookmark-white hover:text-black"> 
+                            More Info 
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rounded Rectangle -->
+            <div class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-r-full absolute h-80 w-2/4 -bottom-24 -left-36">
+            </div>
+        </div>
+
+        <!-- Feature #2 -->
+        <div class="relative mt-20 lg:mt-52">
+            <div class="container flex flex-col-reverse lg:flex-row justify-center items-center gap-x-24">
+                <!-- Content -->
+                <div class="flex flex-1 flex-col items-center lg:items-start">
+                    <h1 class="text-bookmark-blue text-3xl">
+                        Intelligent Search
+                    </h1>
+                    <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, iure? Architecto, nesciunt. Repellat est quidem voluptates, pariatur velit laboriosam quis?
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-6">
+                        <button type="button" class="shadow-md py-3 px-6 rounded-md transition duration-300 bg-bookmark-purple text-white hover:bg-bookmark-white hover:text-black"> 
+                            More Info
+                        </button>
+                    </div>
+                </div>
+                <!-- Image -->
+                <div class="flex flex-1 justify-center z-10 mb-16 lg:mb-0">
+                    <img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="assets/images/illustration-features-tab-2.png" alt="Feature 2">
+                </div>
+            </div>
+
+            <!-- Rounded Rectangle -->
+            <div class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-l-full absolute h-80 w-2/4 -bottom-24 -right-36">
+            </div>
+        </div>
+
+        <!-- Feature #3 -->
+        <div class="relative mt-20 lg:mt-52">
+            <div class="container flex flex-col lg:flex-row justify-center items-center gap-x-24">
+                <!-- Image -->
+                <div class="flex flex-1 justify-center z-10 mb-16 lg:mb-0">
+                    <img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="assets/images/illustration-features-tab-3.png" alt="Feature 1">
+                </div>
+
+                <!-- Content -->
+                <div class="flex flex-1 flex-col items-center lg:items-start">
+                    <h1 class="text-bookmark-blue text-3xl">
+                        Share Your Bookmark
+                    </h1>
+                    <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, iure? Architecto, nesciunt. Repellat est quidem voluptates, pariatur velit laboriosam quis?
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-6">
+                        <button type="button" class="shadow-md py-3 px-6 rounded-md transition duration-300 bg-bookmark-purple text-white hover:bg-bookmark-white hover:text-black"> 
+                            More Info
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rounded Rectangle -->
+            <div class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-r-full absolute h-80 w-2/4 -bottom-24 -left-36">
+            </div>
+        </div>
+    </section>
+
+    <!-- Download -->
+    <section class="py-20 mt-20">
+        <!-- Heading -->
+        <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+            <h1 class="text-3xl text-center text-bookmark-blue">Download the extenstion</h1>
+            <p class="text-center text-bookmark-grey mt-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nemo facere id rerum iure perferendis maxime soluta sint quo distinctio!
+            </p>
+        </div>
+
+        <!-- Cards -->
+        <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 max-w-screen-lg mt-16">
+            <!-- Card #1 -->
+            <div class="flex flex-col rounded-md shadow-md lg:mb-16">
+                <div class="p-6 flex flex-col items-center">
+                    <img src="assets/images/logo-chrome.svg" alt="Chrome">
+                    <h3 class="mt-5 mb-2 text-bookmark-blue text-lg">
+                        Add to Chrome
+                    </h3>
+                    <p class="mb-2 text-bookmark-grey font-light text-center">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ex et veritatis. Totam, dolor impedit.
+                    </p>
+                    <hr class="border-b border-bookmark-white">
+                    <div class="flex py-4">
+                        <button type="button" class="shadow-md py-3 px-6 rounded-md transition duration-300 bg-bookmark-purple text-white hover:bg-bookmark-white hover:text-black"> 
+                            Add and Install Extension
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card #2 -->
+            <div class="flex flex-col rounded-md shadow-md lg:my-8">
+                <div class="p-6 flex flex-col items-center">
+                    <img src="assets/images/logo-opera.svg" alt="Opera">
+                    <h3 class="mt-5 mb-2 text-bookmark-blue text-lg">
+                        Add to Opera
+                    </h3>
+                    <p class="mb-2 text-bookmark-grey font-light text-center">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ex et veritatis. Totam, dolor impedit.
+                    </p>
+                    <hr class="border-b border-bookmark-white">
+                    <div class="flex py-4">
+                        <button type="button" class="shadow-md py-3 px-6 rounded-md transition duration-300 bg-bookmark-purple text-white hover:bg-bookmark-white hover:text-black"> 
+                            Add and Install Extension
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card #3 -->
+            <div class="flex flex-col rounded-md shadow-md lg:mt-16">
+                <div class="p-6 flex flex-col items-center">
+                    <img src="assets/images/logo-firefox.svg" alt="Firefox">
+                    <h3 class="mt-5 mb-2 text-bookmark-blue text-lg">
+                        Add to Firefox
+                    </h3>
+                    <p class="mb-2 text-bookmark-grey font-light text-center">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ex et veritatis. Totam, dolor impedit.
+                    </p>
+                    <hr class="border-b border-bookmark-white">
+                    <div class="flex py-4">
+                        <button type="button" class="shadow-md py-3 px-6 rounded-md transition duration-300 bg-bookmark-purple text-white hover:bg-bookmark-white hover:text-black"> 
+                            Add and Install Extension
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="py-20 bg-bookmark-white">
+        <div class="container">
+            <!-- Heading -->
+            <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+                <h1 class="text-3xl text-center text-bookmark-blue">Frequently Asked Questions</h1>
+                <p class="text-center text-bookmark-grey mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nemo facere id rerum iure perferendis maxime soluta sint quo distinctio!
+                </p>
+            </div>
+
+            <!-- Items -->
+            <div class="flex flex-col sm:w-3/4 lg:w-5/12 mt-12 mx-auto">
+                <!-- Item #1 -->
+                <div class="flex items-center border-b py-4 cursor-pointer">
+                    <span class="flex-1">
+                        What is a bookmark?
+                    </span>
+                    <i class="fas fa-chevron-down text-bookmark-purple"></i>
+                </div>
+                <!-- Item #2 -->
+                <div class="flex items-center border-b py-4 cursor-pointer">
+                    <span class="flex-1">
+                        What is a bookmark?
+                    </span>
+                    <i class="fas fa-chevron-down text-bookmark-purple"></i>
+                </div>
+                 <!-- Item #3 -->
+                <div class="flex items-center border-b py-4 cursor-pointer">
+                    <span class="flex-1">
+                        What is a bookmark?
+                    </span>
+                    <i class="fas fa-chevron-down text-bookmark-purple"></i>
+                </div>
+                <!-- Item #4 -->
+                <div class="flex items-center border-b py-4 cursor-pointer">
+                    <span class="flex-1">
+                        What is a bookmark?
+                    </span>
+                    <i class="fas fa-chevron-down text-bookmark-purple"></i>
+                </div>
+                <!-- Item #5 -->
+                <div class="flex items-center border-b py-4 cursor-pointer">
+                    <span class="flex-1">
+                        What is a bookmark?
+                    </span>
+                    <i class="fas fa-chevron-down text-bookmark-purple"></i>
+                </div>
+                <!-- Item #6 -->
+                <div class="flex items-center border-b py-4 cursor-pointer">
+                    <span class="flex-1">
+                        What is a bookmark?
+                    </span>
+                    <i class="fas fa-chevron-down text-bookmark-purple"></i>
+                </div>
+                <button type="button" class="mt-8 shadow-md py-3 px-6 rounded-md transition duration-300 bg-bookmark-purple text-white hover:bg-bookmark-white hover:text-black"> 
+                    More Info
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="bg-bookmark-purple text-white py-20">
+        <div class="container">
+            <div class="sm:w-3/4 lg:w-2/4 mx-auto">
+                <p class="font-light uppercase text-center mb-8">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At, sed!
+                </p>
+                <h1 class="text-3xl text-center">Lorem ipsum dolor sit amet.</h1>
+                <div class="flex flex-col sm:flex-row gap-16 mt-8">
+                    <input type="text" placeholder="Enter your email" class="focus:outline-none flex-1 px-2 py-3 rounded-md text-black">
+                    <button type="button" class="shadow-md py-3 px-6 rounded-md transition duration-300 bg-bookmark-red text-white hover:bg-bookmark-white hover:text-black"> 
+                        Contact Us
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-bookmark-blue py-8">
+        <div class="container flex flex-col md:flex-row items-center">
+            <div class="flex flex-1 flex-wrap items-center justify-center md:justify-start gap-12">
+                <img src="assets/images/logo-bookmark-white.png" alt="Logo">
+                <ul class="flex uppercase gap-12 text-white text-xs">
+                    <li class="cursor-pointer"> Features </li> 
+                    <li class="cursor-pointer"> Pricing </li> 
+                    <li class="cursor-pointer"> Contact </li>
+                </ul>
+            </div>
+            <div class="flex gap-10 mt-12 md:mt-0 text-white text-2xl">
+                <li class="list-none cursor-pointer"><i class="fab fa-twitter"></i></li>
+                <li class="list-none cursor-pointer"><i class="fab fa-facebook-square"></i></li>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
