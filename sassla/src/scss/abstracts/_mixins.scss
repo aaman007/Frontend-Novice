@@ -1,0 +1,8 @@
+@use 'functions' as *;
+
+
+// Set background and text color
+@mixin set-background($color) {
+    background-color: $color;
+    color: set-text-color($color);
+}

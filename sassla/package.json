@@ -1,0 +1,11 @@
+{
+  "name": "sassla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:sass": "sass --watch src/scss/styles.scss public/assets/css/styles.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

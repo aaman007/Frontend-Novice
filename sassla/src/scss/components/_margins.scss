@@ -1,0 +1,31 @@
+@use '../abstracts/constants' as *;
+
+@each $space in $spaceamounts {
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+
+    .ml-#{$space} {
+        margin-left: #{$space}rem;
+    }
+
+    .mr-#{$space} {
+        margin-right: #{$space}rem;
+    }
+
+    .mt-#{$space} {
+        margin-top: #{$space}rem;
+    }
+
+    .mb-#{$space} {
+        margin-bottom: #{$space}rem;
+    }
+
+    .mx-#{$space} {
+        margin: 0 #{$space}rem;
+    }
+
+    .my-#{$space} {
+        margin: #{$space}rem 0;
+    }
+}

@@ -1,0 +1,20 @@
+@use '../abstracts/breakpoints' as *;
+
+
+@media (max-width: $small) {
+    .showcase {
+        height: 400px;
+
+        &-content {
+            text-align: center;
+
+            h1 {
+                font-size: 25px;
+            }
+
+            img {
+                display: none;
+            }
+        }
+    }
+}

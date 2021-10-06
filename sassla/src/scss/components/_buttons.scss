@@ -1,0 +1,22 @@
+@use '../abstracts' as *;
+
+%btn {
+    display: inline-block;
+    padding: 8px 20px;
+    margin: 3px;
+    border-radius: 5px;
+
+    &:hover {
+        transform: scale(0.98);
+    }
+}
+
+.btn-primary {
+    @extend %btn;
+    @include set-background(lighten($primary-color, 10%));
+}
+
+.btn-secondary {
+    @extend %btn;
+    @include set-background($secondary-color);
+}
