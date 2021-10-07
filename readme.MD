@@ -31,7 +31,12 @@ Resource 2: https://www.youtube.com/watch?v=nu5mdN2JIwM
 Resource 3: https://www.youtube.com/watch?v=CR-a8upNjJ0
 
 ### Day 7: Project TypeScripter
-Typescript blah blah.... stuffs                    
+TypeScript blah blah.... stuffs                    
 Resource 1: https://www.typescriptlang.org/docs/              
 Resource 2: https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI              
-Resource 3: https://www.youtube.com/watch?v=BCg4U1FzODs&t=60s       
+Resource 3: https://www.youtube.com/watch?v=BCg4U1FzODs&t=60s          
+
+### Day 7: Project Webpacker
+Webpack and TypeScript blah blah.... stuffs           
+Resource 1: https://webpack.js.org/guides/getting-started/                       
+Resource 2: https://www.youtube.com/playlist?list=PL4cUxeGkcC9hOkGbwzgYFmaxB0WiduYJC
