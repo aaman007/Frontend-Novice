@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        h1, h3 {
+            color: blue;
+            text-align: center;
+        }
+
+        .users {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    </style>
+
+    <title>Componentify</title>
+</head>
+<body>
+    <h1> Users </h1>
+
+    <div class="users">
+        <user-card 
+            name="John Doe" 
+            avatar="https://randomuser.me/api/portraits/men/4.jpg"
+        >
+            <div slot="email"> john.doe@gmail.com </div>
+            <div slot="phone"> +913737373737 </div>
+        </user-card>
+
+        <user-card 
+            name="James Smith" 
+            avatar="https://randomuser.me/api/portraits/men/41.jpg"
+        >
+            <div slot="email"> james@gmail.com </div>
+            <div slot="phone"> +913737373737 </div>
+        </user-card>
+
+        <user-card 
+            name="Jonah Staine" 
+            avatar="https://randomuser.me/api/portraits/women/24.jpg"
+        >
+            <div slot="email"> staine@gmail.com </div>
+            <div slot="phone"> +913737373737 </div>
+        </user-card>
+
+        <user-card 
+            name="Ron Staine" 
+            avatar="https://randomuser.me/api/portraits/men/24.jpg"
+        >
+            <div slot="email"> ron@gmail.com </div>
+            <div slot="phone"> +913737373737 </div>
+        </user-card>
+
+        <user-card 
+            name="Platina Staine" 
+            avatar="https://randomuser.me/api/portraits/women/30.jpg"
+        >
+            <div slot="email"> platina@gmail.com </div>
+            <div slot="phone"> +913737373737 </div>
+        </user-card>
+    </div>
+    
+    <script src="userCard.js"></script>
+</body>
+</html>
